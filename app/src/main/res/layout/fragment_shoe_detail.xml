@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ShoeDetailFragment">
+
+    <data>
+        <variable
+            name="shoeViewModel"
+            type="com.udacity.shoestore.models.ShoesViewModel" />
+
+        <variable
+            name="shoeData"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <!-- I can and know how to design all screens in this project with ather viewGeoups, but I refer to use Constraintlayout. Because it easy to design in constraintlayout.-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/shoeNameTV"
+            style="@style/textview_text_style"
+            android:text="@string/shoe_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/companyTv"
+            style="@style/textview_text_style"
+            android:text="@string/company"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoeNameTV" />
+
+        <TextView
+            android:id="@+id/shoeSizeTv"
+            style="@style/textview_text_style"
+            android:text="@string/shoesize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/companyTv" />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            style="@style/textview_text_style"
+            android:text="@string/description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoeSizeTv" />
+
+        <EditText
+            android:id="@+id/editTextTextShoeName"
+            style="@style/editTextTextStyle"
+            android:text="@={shoeData.name}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/shoeNameTV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextCompany"
+            style="@style/editTextTextStyle"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:text="@={shoeData.company}"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/companyTv"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextShoeName" />
+
+        <EditText
+            android:id="@+id/editTextShoeSize"
+            style="@style/editTextTextStyle"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@={shoeData.size}"
+            app:layout_constraintStart_toEndOf="@+id/shoeSizeTv"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextCompany" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            style="@style/editTextTextStyle"
+            android:ems="10"
+            android:text="@={shoeData.description}"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/descriptionTv"
+            app:layout_constraintTop_toBottomOf="@+id/editTextShoeSize" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            style="@style/ButtonsStyle"
+            android:layout_width="180dp"
+            android:text="@string/cancelbuton"
+            app:layout_constraintBaseline_toBaselineOf="@+id/buttonSave"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSave"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            style="@style/ButtonsStyle"
+            android:layout_width="180dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/savebuton"
+            android:onClick="@{() -> shoeViewModel.createNewShoes(shoeData.name, shoeData.company, shoeData.size, shoeData.description)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonCancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

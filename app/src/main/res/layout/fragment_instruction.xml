@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".InstructionFragment">
+
+    <!-- I used Constraintlayout here because I want to put the button at the bottum of the screen, and it is easy design by constraintlayout.-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewTitleInstruction"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/textTitleInstruction"
+            android:textSize="25sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:padding="16dp"
+            android:text="@string/detailInInstruction"
+            android:textSize="22sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitleInstruction"
+            tools:layout_editor_absoluteX="-16dp" />
+
+        <Button
+            android:id="@+id/buttonGoShoesList"
+            style="@style/ButtonsStyle"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:text="Go to the Shoes list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

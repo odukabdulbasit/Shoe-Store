@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_title_welcome_fragment">Welcome to Shoe Store</string>
+    <string name="article_about_shoes_welcome_fragment">Shoes not only help our feet to heal but can also aid in support and stability of our foot. Not all feet are perfect, so properly fitting shoes can help align your feet, ankles, knees, hips and back to correct your gait and improve posture.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="textTitleInstruction">A Look at the Benefits of Shoes</string>
+    <string name="detailInInstruction">In the early 1900s, there was an epidemic of hookworms in Mississippi and other rural American states. Improper sanitary facilities in combination with the lack of foot protection lead to the parasitic worm being able to bore itself into a foot in a corkscrew-like manner. Severe illness would ensue after a hookworm infection with anemia being the biggest health concern. However, an educational health campaign reinforcing the importance of wearing shoes and sanitary public facilities helped make hookworms virtually unheard of in the affected areas.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_in_shoelist_fragment">Welcome to shoe store, I wish you will have fun to visit my application</string>
+    <string name="submit">submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="shoesize">Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="cancelbuton">Cancel</string>
+    <string name="savebuton">Save</string>
+    <string name="itemShoeNameTv">Name : </string>
+    <string name="companyTv">Company : </string>
+    <string name="sizeTv">Size : </string>
+    <string name="descriptionTv">Description : </string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="itemshoedata"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="35dp"
+        android:padding="10dp"
+        android:background="@color/cardview_light_background">
+
+
+        <TextView
+            android:id="@+id/itemShoeName"
+            android:text="@string/itemShoeNameTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/item_text_view_style" />
+
+        <TextView
+            android:id="@+id/itemShoeCompany"
+            style="@style/item_text_view_style"
+            android:text="@string/companyTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemShoeName" />
+
+        <TextView
+            android:id="@+id/itemShoeSize"
+            style="@style/item_text_view_style"
+            android:text="@string/sizeTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemShoeCompany" />
+
+        <TextView
+            android:id="@+id/itemShoeDescription"
+            style="@style/item_text_view_style"
+            android:text="@string/descriptionTv"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemShoeSize" />
+
+        <TextView
+            android:id="@+id/whatIsName"
+            style="@style/whatComeWithBindingFromUserTVstyle"
+            android:text="@{itemshoedata.name}"
+            app:layout_constraintStart_toEndOf="@+id/itemShoeName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/whatIsCompany"
+            style="@style/whatComeWithBindingFromUserTVstyle"
+            android:text="@{itemshoedata.company}"
+            app:layout_constraintStart_toEndOf="@+id/itemShoeCompany"
+            app:layout_constraintTop_toBottomOf="@+id/whatIsName" />
+
+        <TextView
+            android:id="@+id/whatIsSize"
+            style="@style/whatComeWithBindingFromUserTVstyle"
+            android:text="@{itemshoedata.size}"
+            app:layout_constraintStart_toEndOf="@+id/itemShoeSize"
+            app:layout_constraintTop_toBottomOf="@+id/whatIsCompany" />
+
+        <TextView
+            android:id="@+id/whatIsDescription"
+            style="@style/whatComeWithBindingFromUserTVstyle"
+            android:text="@{itemshoedata.description}"
+            app:layout_constraintStart_toEndOf="@+id/itemShoeDescription"
+            app:layout_constraintTop_toBottomOf="@+id/whatIsSize" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
