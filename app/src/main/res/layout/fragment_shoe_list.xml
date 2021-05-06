@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ShoeListFragment">
 
-    <!-- I used Constraintlayput here to locate fab button as I want.-->
+    <!--  I want display shoe objects in a view one under another vertically. So I used LineerLayout verticalay inside ScrollView. -->
+    <!--  This can be achieved easily with a simple layout like - Linear layout with orientation set to "vertical" -->
+    <!--  I uset Constraint layout to locate floatingActionButton at the right|bottom on screen with ScrollView -->
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"

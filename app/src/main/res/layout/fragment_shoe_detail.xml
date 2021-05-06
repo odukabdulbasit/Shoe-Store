@@ -14,7 +14,9 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
-    <!-- I can and know how to design all screens in this project with ather viewGeoups, but I refer to use Constraintlayout. Because it easy to design in constraintlayout.-->
+    <!--    It is a complex layout with 4 textviews, 4 edittexts and 2 buttons. -->
+    <!--    1. To add in line labels to edit texts (baseline constraint solves this)-->
+    <!--    2. Linear layout cannot have vertical orientation for some and horizontal orientation for some other views. So I used Constraint layout. -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

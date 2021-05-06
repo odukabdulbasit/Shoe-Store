@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".InstructionFragment">
 
-    <!-- I used Constraintlayout here because I want to put the button at the bottum of the screen, and it is easy design by constraintlayout.-->
+    <!-- I used Constraintlayout here because I want to put the button at the bottom of the screen, and it is easy design by Constraintlayout.-->
+    <!--  Constraint layout because I need the textviews arrange vertically but I also need the button placed at the bottom of parent.  -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

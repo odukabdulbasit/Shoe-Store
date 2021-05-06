@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".WelcomeFragment">
 
-    <!-- I used Constraintlayout here because I want to put the button at the bottum of the screen, and it is easy design by constraintlayout. I dont know is there properties to make it with lineerlayout-->
+    <!-- I used Constraintlayout here because I want to put the button at the bottum of the screen, and also need textviews arrange vertically -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

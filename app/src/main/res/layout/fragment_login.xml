@@ -6,7 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".LoginFragment">
 
-    <!-- I used Constraintlayout here because it give me more flexible state to design ui. I cant design what I need in thos screen with lineerlayout-->
+    <!-- I used Constraintlayout here because it give me more flexible state to design ui. -->
+    <!--        Constraint layout because we need relative placement, guideline based placement. -->
+    <!--        Using simple layouts like Linear Layout will result in clumsy code and take a toll on performance-->
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">

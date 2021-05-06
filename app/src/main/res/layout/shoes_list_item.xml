@@ -9,6 +9,10 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!--    1. To add in line labels to TextView texts (constraint solves this)-->
+    <!--    2. Linear layout cannot have vertical orientation for some
+    and horizontal orientation for some other views. So I used Constraint layout. -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
